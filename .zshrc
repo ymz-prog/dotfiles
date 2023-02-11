@@ -78,12 +78,11 @@ fi
 # anyframeキーバインド
 bindkey '^r' anyframe-widget-cdr
 bindkey '^f' anyframe-widget-execute-history
-bindkey '^x^b' anyframe-widget-checkout-git-branch
-bindkey '^x^g' anyframe-widget-cd-ghq-repository
+bindkey '^b' anyframe-widget-checkout-git-branch
+bindkey '^g' anyframe-widget-cd-ghq-repository
 
 
 ### asdf
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 ### 履歴関連のオプション
